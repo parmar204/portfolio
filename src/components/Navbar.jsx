@@ -6,18 +6,6 @@ import logo from '../assets/logo.png'
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (toggleMenu) {
-        setToggleMenu(false);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [toggleMenu]); 
-
   const mobileMenuVariants = {
     hidden: {
       opacity: 0,
@@ -38,8 +26,8 @@ const Navbar = () => {
   };
 
   return (
-    <>
-      <div className='sticky drop-shadow-xl bg-white/80 backdrop-blur-sm top-6 mx-[7%] rounded-full py-2.5 px-5 flex items-center justify-between gap-6 z-50'>
+    <div className='sticky top-6 z-50'>
+      <div className='drop-shadow-xl bg-white/80 backdrop-blur-sm mx-[7%] rounded-full py-2.5 px-5 flex items-center justify-between gap-6 z-50'>
         <p className='text-xl font-bold text-gray-800 tracking-wide flex items-center gap-2'><img src={logo} className='w-5' alt="" /> Govind</p>
         <div className='hidden md:flex items-center gap-6'>
           {navlinks.map((link, index) => (
@@ -56,7 +44,7 @@ const Navbar = () => {
           href='#contact'
           className='hidden md:inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold py-2 px-5 rounded-full transition-colors duration-200 shadow-md hover:shadow-lg'
         >
-          Contact Us
+          Contact Me
         </a>
 
         <button
@@ -101,13 +89,13 @@ const Navbar = () => {
                         onClick={() => setToggleMenu(false)}
                         className='bg-blue-700 hover:bg-blue-800 text-white font-semibold py-2 px-5 rounded-full transition-colors duration-200 shadow-md hover:shadow-lg w-full text-center'
                         >
-                        Contact Us
+                        Contact Me
                         </a>
                     </div>
                 </motion.div>
             )}
       </AnimatePresence>
-    </>
+    </div>
   );
 };
 
