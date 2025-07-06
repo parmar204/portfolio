@@ -17,4 +17,5 @@ html{
 
 ::-webkit-scrollbar{
   transition: all 0.2s ease;
+  display: none;
 }

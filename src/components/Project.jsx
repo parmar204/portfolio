@@ -49,7 +49,7 @@ const Project = () => {
   return (
     <motion.section
       id='Project'
-      className='py-20 px-[5%] bg-gradient-to-tr from-[#fdfbfb] to-[#ebedee] min-h-screen'
+      className='py-20 px-[5%] min-h-screen'
       variants={containerVariants}
       initial='hidden'
       whileInView='visible'

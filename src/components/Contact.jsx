@@ -35,7 +35,7 @@ const Contact = () => {
   return (
     <motion.section
       id="contact"
-      className="py-20 px-[5%] bg-gradient-to-br from-[#fdfbfb] to-[#ebedee] min-h-screen"
+      className="py-20 px-[5%] min-h-screen"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}

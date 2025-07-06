@@ -76,7 +76,7 @@ const Skills = () => {
   return (
     <motion.section
       id="skill"
-      className="py-20 px-[7%] bg-gradient-to-br from-[#f9f9f9] to-[#e0f7ff] min-h-screen"
+      className="py-20 px-[7%] min-h-screen"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
