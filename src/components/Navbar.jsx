@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { navlinks } from '../assets/assets';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -39,7 +40,7 @@ const Navbar = () => {
   return (
     <>
       <div className='sticky drop-shadow-xl bg-white/80 backdrop-blur-sm top-6 mx-[7%] rounded-full py-2.5 px-5 flex items-center justify-between gap-6 z-50'>
-        <p className='text-xl font-bold text-gray-800 tracking-wide'>Govind</p>
+        <p className='text-xl font-bold text-gray-800 tracking-wide flex items-center gap-2'><img src={logo} className='w-5' alt="" /> Govind</p>
         <div className='hidden md:flex items-center gap-6'>
           {navlinks.map((link, index) => (
             <a

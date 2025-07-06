@@ -8,7 +8,7 @@ const Skills = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3,
+        staggerChildren: 1,
       },
     },
   };
@@ -33,7 +33,7 @@ const Skills = () => {
       transition: {
         duration: 0.5,
         ease: "easeOut",
-        staggerChildren: 0.1,
+        staggerChildren: 1,
       },
     },
   };
