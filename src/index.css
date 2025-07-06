@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import "tailwindcss";
 
+html{
+  scroll-behavior: smooth;
+}
+
 *{
   font-family: 'Outfit', sans-serif;
 }
@@ -9,4 +13,8 @@
   --color-primary: #1A237E;
   --color-secondary: #333333;
   --color-tertiary: #004d40;
+}
+
+::-webkit-scrollbar{
+  transition: all 0.2s ease;
 }

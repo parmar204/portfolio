@@ -38,7 +38,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='sticky drop-shadow-xl bg-white/80 backdrop-blur-sm top-4 mx-[7%] rounded-full py-2.5 px-5 flex items-center justify-between gap-6 z-50'>
+      <div className='sticky drop-shadow-xl bg-white/80 backdrop-blur-sm top-6 mx-[7%] rounded-full py-2.5 px-5 flex items-center justify-between gap-6 z-50'>
         <p className='text-xl font-bold text-gray-800 tracking-wide'>Govind</p>
         <div className='hidden md:flex items-center gap-6'>
           {navlinks.map((link, index) => (
