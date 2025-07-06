@@ -1,6 +1,6 @@
 import htmlImg from "../assets/html.png"
 import cssImg from "../assets/css.webp"
-import jsImg from "../assets/js.webp"
+import jsImg from "../assets/javascript.webp"
 import reactImg from "../assets/react.png"
 import tailwindCssImg from "../assets/tailwindcss.png"
 import nodeImg from "../assets/node.png"
@@ -109,3 +109,18 @@ export const portfolioData = {
         }
     ],
 }
+
+ export const navlinks = [
+    {
+        name: "Home", href: "/"
+    },
+    {
+        name: "Skills", href: "#skill"
+    },
+    {
+        name: "Education", href: "#education"
+    },
+    {
+        name: "Project", href: "#Project"
+    }
+]
